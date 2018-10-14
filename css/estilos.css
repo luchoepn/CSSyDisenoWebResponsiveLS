@@ -1,0 +1,125 @@
+body {
+	font-family: Dancing Script;
+  background-color: black;
+  color: white;
+}
+
+img {
+  box-shadow: 2px 0 0 #02010a;
+}
+.container {
+	margin: 0;
+	padding: 0;
+	width: 900px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cabecera {
+  background-color: #5b7989;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.cabecera h1 {
+  width: 50%;
+  display: inline;
+  text-shadow: -2px 0px 0px #02010a;
+}
+
+.cabecera nav {
+  width: 50%;
+  display: inline;
+}
+
+#menu-principal ul {
+	float: right;
+	width: auto;
+	padding: 0;
+	margin: 0;
+  display: inline;
+}
+
+#menu-principal ul li {
+	padding: 10px;
+	list-style-type: none;
+  display: inline;
+}
+
+#menu-principal a {
+	color: white;
+}
+
+#menu-principal a.nounderline:link
+{
+  text-decoration:none;
+}
+
+.imagenCentral {
+  background-color: #82c3a6;
+  padding: 20px 100px;
+}
+
+.imagenCentral img {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imagenSecundaria {
+  background-color: #d5c75f;
+  border: 1px;
+  display: flex;
+	flex-flow: row nowrap;
+  text-align: center;
+}
+
+.imagenSecundaria a {
+  color: black;
+}
+
+div [class*="bloque"]{
+  flex: 1 2 50%
+}
+
+.bloqueIzquierdo {
+  order: 1;
+  padding: 20px 30px;
+}
+
+.bloqueIzquierdo img:hover {
+  transform: rotate(10deg);
+  box-shadow: 2px 0 0 #82c3a6;
+}
+
+.bloqueDerecho {
+  order: 2;
+  padding: 20px 30px;
+}
+
+.bloqueDerecho img:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 2px 0 0 #82c3a6;
+}
+
+.pieDePagina{
+  border-radius: 0px 0px 10px 10px;
+  background-color: #C6d5c5;
+  color: black;
+  display: flex;
+	flex-flow: row nowrap;
+  padding: 10px;
+}
+
+div [class*="seccion"]{
+  flex: 1 4 25%
+}
+
+.seccionRedes img {
+  box-shadow: none;
+}
