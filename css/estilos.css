@@ -123,6 +123,27 @@ div [class*="seccion"]{
   box-shadow: none;
 }
 
+@keyframes header-animacion {
+	0% {
+		margin-top: 150%;
+	}
+	60% {
+		margin-top: -5%;
+	}
+	100% {
+		margin-top: 0%;
+	}
+}
+
+#header {
+	animation-name: header-animacion;
+	animation-duration: 2s;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay: 0s;
+}
+
 @media (max-width:900px) {
 	.container {
 		width: 100%;
@@ -168,5 +189,4 @@ div [class*="seccion"]{
 	div [class*="seccion"]{
 	  flex: 1 1 100%
 	}
-
 }

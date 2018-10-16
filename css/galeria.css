@@ -1,0 +1,42 @@
+.galeria{
+  background-color: #d5c75f;
+  display: flex;
+	flex-direction: column;
+  padding: 10px;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+}
+
+div [class*="imagen"]{
+  padding: 10px;
+  flex: 1 1 30%;
+}
+
+.imagenUno img {
+  -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+}
+
+.imagenDos,.imagenCuatro,.imagenSeis img {
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+
+.imagenTres img {
+  -webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+
+@media (max-width:900px) {
+	.fila {
+	  display: flex;
+		flex-flow: column;
+	}
+
+	div [class*="imagen"]{
+	  flex: 1 1 100%
+	}
+}
